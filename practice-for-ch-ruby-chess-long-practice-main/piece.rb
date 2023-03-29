@@ -7,7 +7,7 @@ class Piece
     end
 
     def to_s
-        
+        return symbol 
     end
 
     def empty?
@@ -16,6 +16,6 @@ class Piece
     end
 
     def valid_moves
-        
+
     end
 end

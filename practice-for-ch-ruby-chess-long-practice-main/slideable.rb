@@ -21,7 +21,8 @@ module Slideable
     end
 
     def moves
-        moves_arr = []
+        move_dirs.each do |dx, dy|
+      moves.concat(grow_unblocked_moves_in_dir(dx, dy))
     end
 
     private
